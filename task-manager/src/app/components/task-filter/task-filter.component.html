@@ -1,0 +1,11 @@
+<div class="filter-container">
+    <button [class.active]="currentFilter === 'all'" (click)="setFilter('all')" class="filter-btn">
+        All Tasks
+    </button>
+    <button [class.active]="currentFilter === 'pending'" (click)="setFilter('pending')" class="filter-btn">
+        Active
+    </button>
+    <button [class.active]="currentFilter === 'completed'" (click)="setFilter('completed')" class="filter-btn">
+        Completed
+    </button>
+</div>
